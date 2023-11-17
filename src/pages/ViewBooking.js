@@ -43,7 +43,7 @@ const Bookings = () => {
           notify(temp);
         });
       axios
-      .delete(`https://hostel-booking-system-backend.onrender.com/${id}`)
+      .delete(`https://hostel-booking-system-backend.onrender.com/bookings/${id}`)
         .then(() => {
           setBookings(bookings.filter((booking) => booking._id !== id));
         });
