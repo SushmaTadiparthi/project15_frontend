@@ -30,7 +30,7 @@ const Bookings = () => {
     // eslint-disable-next-line no-restricted-globals
     if (confirm("Do you want to continue delete the booking") === true) {
       axios
-      .get(`https://hostel-booking-system-backend.onrender.com/${id}`)
+      .get(`https://hostel-booking-system-backend.onrender.com/bookings/${id}`)
         .then((response) => {
           let currentDate = new Date();
           currentDate = getDate(currentDate);
